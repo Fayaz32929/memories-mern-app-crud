@@ -1,6 +1,6 @@
 {
- "version": 2,
- "name": "memories",
+ "version": 1,
+ "name": "memories-api",
  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
 }
