@@ -5,7 +5,7 @@
     ],
     "routes": [
         {
-          "src": "/.*",
+          "src": "/posts*",
           "dest": "index.js"
         }
     ]
