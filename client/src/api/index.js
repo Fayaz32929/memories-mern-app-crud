@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:5000/posts";
+const url = "https://merncrudapp-production-2f95.up.railway.app/posts";
 export const fetchPosts = () => axios.get(url);
 
 export const createPost = (newPost) => axios.post(url, newPost);
