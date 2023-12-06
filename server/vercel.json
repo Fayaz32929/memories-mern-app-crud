@@ -5,12 +5,12 @@
     ],
     "routes": [
         {
-      "src": "/posts",
+      "src": "/",
       "dest": "/index.js",
       "methods": ["GET"]
     },
          {
-      "src": "/posts",
+      "src": "/",
       "dest": "/index.js",
       "methods": ["POST"]
     },
