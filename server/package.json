@@ -4,14 +4,11 @@
  "description": "",
  "main": "index.js",
  "type": "module",
-  "engines": {
-  "node": "18.x"
- },
  "scripts": {
   "start": "nodemon index.js"
  },
  "engines": {
-  "node": "v20.9.0"
+  "node": "18.x"
  },
  "keywords": [],
  "author": "",

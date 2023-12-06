@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://merncrudapp-production-2f95.up.railway.app/posts";
+const url = "https://memories-app-api.vercel.app/api";
 export const fetchPosts = () => axios.get(url);
 
 export const createPost = (newPost) => axios.post(url, newPost);
