@@ -5,8 +5,14 @@
     ],
     "routes": [
         {
-          "src": "/posts*",
-          "dest": "index.js"
-        }
+      "src": "/posts",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+         {
+      "src": "/posts",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
     ]
   }
