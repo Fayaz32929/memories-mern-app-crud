@@ -28,7 +28,7 @@ export default function Form({ currentId, setCurrentId }) {
  };
  return (
   <Paper className={classes.paper}>
-   <form className={`${classes.root} ${classes.form}`} autoComplete="off" noValidate onSubmit={handleSubmit}>
+   <form className={`${classes.root} ${classes.form}`} autoComplete="off" noValidate>
     <Typography variant="h6">{currentId ? "Editing" : "Creating"} a Memory</Typography>
     <TextField
      name="creator"
@@ -69,7 +69,15 @@ export default function Form({ currentId, setCurrentId }) {
       onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })}
      />
     </div>
-    <Button className={classes.buttonSubmit} color="primary" size="large" type="submit" fullWidth variant="contained">
+    <Button
+     onClick={handleSubmit}
+     className={classes.buttonSubmit}
+     color="primary"
+     size="large"
+     type="submit"
+     fullWidth
+     variant="contained"
+    >
      Submit
     </Button>
     <Button color="secondary" size="small" onClick={clear} type="submit" fullWidth variant="contained">
